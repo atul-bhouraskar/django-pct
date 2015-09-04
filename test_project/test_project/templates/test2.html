@@ -1,0 +1,16 @@
+Extra text in test2
+{% extends "test.html" %}
+
+{% block ablock %}
+Block from test2 {{ somevar|default:"Default value"|date:"Y-m-d" }}
+{% if a == b %}
+    A ({{ a }}) == B ({{ b }}
+{% else %}
+    A != B
+{% endif %}
+
+{% for obj in objects %}
+    This is {{ obj }}
+{% endfor %}
+{% endblock %}
+
